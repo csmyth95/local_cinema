@@ -1,6 +1,6 @@
 # eye_cinema_app
 
-A new Flutter project.
+A new Flutter project being developed solely for the Eye cinema of Galway, Ireland.
 
 ## Getting Started
 
