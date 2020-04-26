@@ -1,6 +1,6 @@
 
 
-import 'package:eye_cinema_app/screens/filmschedule/FilmSchedule.dart';
+import 'package:eye_cinema_app/screens/filmschedule/filmschedule.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
