@@ -1,3 +1,4 @@
+import 'package:eye_cinema_app/screens/filminfo/filminfo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:getflutter/components/image/gf_image_overlay.dart';
@@ -29,15 +30,25 @@ class FilmsShowing extends StatelessWidget {
       padding: const EdgeInsets.all(32),
 
       children: List.generate(filmsToDisplay, (index) {
-        return Container(
-            padding: const EdgeInsets.all(8),
-            child: GFImageOverlay(
-              height: 400,
-              width: 80,
-              shape: BoxShape.rectangle,
-              image: AssetImage('lib/img/films/gunsAkimbo.png'),
-              borderRadius: BorderRadius.all(Radius.circular(5.0)),
-            )
+        return Material(
+          child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FilmInfo()),
+            );
+          },
+            child:Container(
+                padding: const EdgeInsets.all(8),
+                child: GFImageOverlay(
+                  height: 400,
+                  width: 80,
+                  shape: BoxShape.rectangle,
+                  image: AssetImage('lib/img/films/gunsAkimbo.png'),
+                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                )
+            ),
+          ),
         );
       }),
     );
